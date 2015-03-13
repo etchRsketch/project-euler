@@ -12,7 +12,7 @@ def largestPrimeFactor(number):
     return number
 
 def isComposite (number):
-  for x in range(2, int(math.sqrt(number))):
+  for x in range(2, int(math.sqrt(number) + 1)):
     if number % x == 0:
       return x
   return False
