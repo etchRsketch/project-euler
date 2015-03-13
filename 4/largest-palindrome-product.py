@@ -1,7 +1,5 @@
 #Find the largest palindrome made from the product of two 3-digit numbers
 
-#largest product of two 3-digit numbers is 999^2 = 998001
-
 def isPalindrome(number):
   string = str(abs(number))
   digits = len(string)
@@ -21,6 +19,7 @@ def findLargestPalindrome():
     for y in range(x, 0, -1):
       if isPalindrome(x * y):
         palindromes.append(x * y)
+        break
   return max(palindromes)
 
 print findLargestPalindrome()
